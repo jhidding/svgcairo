@@ -30,7 +30,7 @@ Source-Repository head
 
 custom-setup
   setup-depends: base >= 4.6,
-                 Cabal >= 1.24 && < 1.25,
+                 Cabal >= 1.24,
                  gtk2hs-buildtools >= 0.13.1.0 && < 0.14
 
 Library
@@ -38,7 +38,7 @@ Library
                         glib  >=0.13.0.0 && <0.14,
                         cairo >=0.13.0.0 && <0.14
 						
-        build-tools:    gtk2hsC2hs >= 0.13.11,
+        build-tools:    gtk2hsC2hs >= 0.13,
                         gtk2hsTypeGen
 
         cpp-options:    -U__BLOCKS__ -D__attribute__(A)= -D_Nullable= -D_Nonnull=
